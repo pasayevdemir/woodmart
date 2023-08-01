@@ -1,0 +1,64 @@
+/* Reset css */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box !important;
+    font-size: 13px;
+    font-family: 'Hind', sans-serif;
+
+}
+
+a {
+    text-decoration: none !important;
+    color: black !important;
+}
+
+ul {
+    list-style: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+html {
+    max-width: 100vw !important;
+}
+
+body,
+.main-body {
+    width: 100% !important;
+    height: 3000vw;
+}
+
+.cntnr-wd {
+    padding-inline: 15px;
+}
+
+.main-body {
+    height: 200px;
+    /* background-color: red; */
+}
+
+.wd-red {
+    background-color: #D41212;
+}
+
+.wd-red::after {
+    border-right-color: #D41212;
+}
+
+
+.wd-green {
+    background-color: #65b32e;
+}
+
+.wd-green::after {
+    border-right-color: #65b32e;
+}
+
+.wd-yello {
+    background-color: #FBBC34;
+}
+
+.wd-yello::after {
+    border-right-color: #FBBC34;
+}
