@@ -258,16 +258,8 @@
     color: #439665 !important;
 }
 
-.shop-li:hover {
-    background-color: #fff;
-}
-
-.shop-li:hover .shop-a,.shop-a::after{
-    color: #333333 !important;
-}
-
-.active .shop-li-dropdown{
-    visibility: visible;
+.shop-li .shop-li-dropdown{
+    visibility: hidden;
 }
 
 .active{
@@ -357,6 +349,58 @@
 
 
 /* Blok items dorpdown start*/
+
+#downbarBlok{
+    width: 810px !important;
+}
+
+#downbarBlok ul{
+    min-width: 33.33%;
+}
+
+#blokUl{
+    z-index: auto;
+    padding: 35px 0 0 30px !important;
+    margin-block: -30px !important;
+    margin-left: -30px !important;
+    display: flex;
+    flex-direction: column;
+    background-color: #fafafa;
+    border-left: 0.5px solid rgba(0, 0, 0, 0.05) !important;
+}
+
+.blok-title{
+    margin-bottom: 8px;
+}
+
+.blok-li{
+    display:flex;
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+}
+
+.blok-li:not(.blok-li:last-child){
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.blok-li >a{
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.blok-post-info>a{
+    margin-bottom: 5px !important;
+    font-size: 14px ;
+    font-weight: 600;
+    color: #333333 !important;
+}
+.downbar:not(#downbarHome,#downbarShop)
+.blok-post-info-time-coment > time{
+    margin-right: 10px;
+}
+
+
+/* Blok items dorpdown end*/
 
 
 /* Downbar-Mega Menu END*/

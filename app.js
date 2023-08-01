@@ -1,5 +1,5 @@
 const navbarLiShop = document.querySelectorAll("#navbarLiShop")[0];
-const shopLi = document.querySelectorAll(".shop-li");
+const shopLi = document.querySelectorAll(".shop-cntnr .shop-li");
 document.querySelectorAll(".active .shop-li-dropdown")[0].style.visibility = "hidden";
 navbarLiShop.onmouseenter = () => {
     document.querySelectorAll(".active .shop-li-dropdown")[0].style.visibility = "visible";
@@ -21,7 +21,9 @@ navbarLiShop.onmouseleave = () => {
     document.querySelectorAll(".active .shop-li-dropdown")[0].style.visibility = "hidden";
 }
 
-let _var_maxWidth= parseInt(window.getComputedStyle(document.querySelectorAll("body")[0]).width) + 54;
+let _var_maxWidth= 1402;
 _var_maxWidth = "calc(-"+_var_maxWidth.toString()+"px"+" + 100vw)";
-const downbarElements= document.querySelectorAll("#downbarElements")[0].style.left = _var_maxWidth;
+const downbarElements= document.querySelectorAll(".downbar:not(#downbarHome,#downbarShop)").forEach(x =>{
+    x.style.left = _var_maxWidth;
+});
 console.log(_var_maxWidth);
